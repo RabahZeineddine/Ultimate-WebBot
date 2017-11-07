@@ -14,6 +14,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 9999999;
 }
 
 .settings-icon {
@@ -193,24 +194,28 @@ background-color: transparent;
 
 
 .watson::before{
-    background-color: #00b0ff;
+    /* background-color: #00b0ff; */
+    background-color: #41ddb6;
 }
 
 .watson {
     float: left;   
     margin: 5px 45px 5px 20px;
-    background-color: #00b0ff;
+    background-color: #41ddb6;
     color: #fff;      
-    box-shadow: 0 0 6px  #00b0ff;
+    box-shadow: 0 0 6px  #41ddb6;
     align-self: flex-start;
 }
 
+/* box-shadow: 0 0 6px  #; */
+/* box-shadow: -2px 2px 2px 0 rgba(65,221,182,.4); */
 .classic_theme .watson{
     margin: 0px 45px 5px 5px;
 }
 
 .watson::before {
-    box-shadow: -2px 2px 2px 0 rgba(0, 176, 255, .4);
+    /* box-shadow: -2px 2px 2px 0 rgba(0, 176, 255, .4); */
+    box-shadow: -2px 2px 2px 0 rgba(65,221,182,.4);
     left: -9px;           
 }
 .classic_theme .watson::before{
