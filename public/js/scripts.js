@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // Materialize initialization
-    
+
     $('.modal').modal();
     $('ul.tabs').tabs();
 
@@ -15,9 +15,9 @@ $(document).ready(function () {
     var setup = (results) ? decodeURIComponent(results[0].replace(/\+/g, " ")) : null;
 
     if (setup) {
-    
+
         $('#configurationModal').modal('open');
-    
+
     }
 
     // Initial setup
@@ -27,6 +27,7 @@ $(document).ready(function () {
     $("#chat_input").keypress((event) => {
         sendMessage(event);
     })
+
     // Conversation Radio button change listener.
     $('.conv_radio').click(() => {
         radioToggle();

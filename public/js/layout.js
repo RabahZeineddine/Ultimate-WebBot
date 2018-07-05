@@ -82,7 +82,11 @@ const changeLayout = () => {
 
         fixChatBodySize('body');
         fixChatBodySize('classic');
-        
+
+        $("#chat_input").keypress((event) => {
+            sendMessage(event);
+        })
+
 
     }
 
